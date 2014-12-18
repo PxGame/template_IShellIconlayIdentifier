@@ -1,0 +1,24 @@
+HKLM
+{
+	NoRemove SOFTWARE
+	{
+		NoRemove Microsoft
+		{
+			NoRemove Windows
+			{
+				NoRemove CurrentVersion
+				{
+					NoRemove Explorer
+					{
+						NoRemove ShellIconOverlayIdentifiers
+						{
+							ForceRemove CEncryptionExt = s '{DBF52092-2904-4BDE-AEAE-F32B38EAC794}'
+							ForceRemove CDecryptionExt = s '{0534714C-045F-41E0-8DE3-F9175A2E4150}'
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {DBF52092-2904-4BDE-AEAE-F32B38EAC794} = s 'EncryptionExt Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{C09C3C7E-848A-41C7-B067-05F8B4EE7B56}'
+			Version = s '1.0'
+		}
+	}
+}
